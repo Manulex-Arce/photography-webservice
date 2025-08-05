@@ -22,10 +22,12 @@ define( 'WP_CACHE', true );
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'wordpress' );
-define( 'DB_USER', 'wordpress' );
-define( 'DB_PASSWORD', 'wordpress' );
-define( 'DB_HOST', 'db:3306' );
+define( 'DB_NAME', getenv('POSTGRES_DATABASE') );
+define( 'DB_USER', getenv('POSTGRES_USER') );
+define( 'DB_PASSWORD', getenv('POSTGRES_PASSWORD') );
+define( 'DB_HOST', getenv('POSTGRES_HOST') );
+define( 'DB_DRIVER', 'pgsql' ); // importante para PG4WP
+
 
 /**#@+
  * Authentication unique keys and salts.
