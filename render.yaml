@@ -1,6 +1,0 @@
-services:
-  - type: web
-    name: wordpress
-    env: docker
-    plan: free
-    dockerComposePath: ./docker-compose.yml
