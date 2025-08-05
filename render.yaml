@@ -3,7 +3,7 @@ services:
     name: wordpress
     env: docker
     plan: free
-    dockerfilePath: ./wordpress/Dockerfile
+    image: wordpress:latest
     envVars:
       - key: WORDPRESS_DB_HOST
         value: db:3306
@@ -13,10 +13,20 @@ services:
         value: wordpress
       - key: WORDPRESS_DB_PASSWORD
         value: wordpress
+    ports:
+      - 80
 
   - type: web
     name: db
     env: docker
     plan: free
-    dockerfilePath: ./db/Dockerfile
-    autoDeploy: false
+    image: mysql:5.7
+    envVars:
+      - key: MYSQL_DATABASE
+        value: wordpress
+      - key: MYSQL_USER
+        value: wordpress
+      - key: MYSQL_PASSWORD
+        value: wordpress
+      - key: MYSQL_ROOT_PASSWORD
+        value: root
