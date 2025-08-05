@@ -14,8 +14,9 @@ services:
       - key: WORDPRESS_DB_PASSWORD
         value: wordpress
 
-  - type: private
+  - type: web
     name: db
     env: docker
     plan: free
     dockerfilePath: ./db/Dockerfile
+    autoDeploy: false
