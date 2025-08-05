@@ -1,0 +1,8 @@
+Prompt para ChatGPT:
+
+Genera una ilustración en blanco y negro con estilo de dibujo a tinta (tipo sketch), con líneas de contorno marcadas y sombreado usando técnicas como cross-hatching y stippling. El objeto debe estar centrado, completamente visible, sin fondo, como si fuera un dibujo técnico-artístico. Usa este estilo para representar [aquí describes el objeto o subes la imagen base].
+
+Ejemplo adaptado:
+
+Hazme una ilustración en blanco y negro con estilo de tinta, sombreado con cross-hatching, del dron Mavic 3 Classic. Quiero que aparezca entero, centrado, sin fondo, y con un estilo artístico similar a un dibujo hecho con pluma técnica.
+
